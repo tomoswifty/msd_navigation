@@ -1,0 +1,7 @@
+image: saga_u_4th_floor.pgm
+mode: trinary
+resolution: 0.1
+origin: [-17.4843, -12.8275, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
