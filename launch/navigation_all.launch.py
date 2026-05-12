@@ -13,9 +13,9 @@ def generate_launch_description():
     lidar_localization_pkg = FindPackageShare('lidar_localization_ros2').find('lidar_localization_ros2')
     
     # 設定ファイルのパス
-    nav2_params_file = os.path.expanduser('~/ros2_ws/src/msd_navigation/config/nav2_params.yaml')
-    localization_rviz_config = os.path.expanduser('~/ros2_ws/src/lidar_localization_ros2/rviz/localization.rviz')
-    nav2_rviz_config = os.path.expanduser('~/ros2_ws/src/msd_navigation/rviz/nav2_viewer.rviz')
+    nav2_params_file = os.path.join(msd_navigation_pkg, "config", "nav2_params.yaml")
+    localization_rviz_config = os.path.join(lidar_localization_pkg, "rviz", "localization.rviz")
+    nav2_rviz_config = os.path.join(msd_navigation_pkg, "rviz", "nav2_viewer.rviz")
     
     # Livoxドライバーの起動
     livox_launch = ExecuteProcess(
