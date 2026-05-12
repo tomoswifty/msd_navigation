@@ -304,7 +304,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: False
-    yaml_filename: "/home/msd700/msd_ws/src/msd_exhibition2026/map/test_2026-0507/test_2026-05-07.yaml"
+    yaml_filename: "/home/msd700/msd_ws/src/msd_exhibition2026/map/kitakata_all/kitakata_all.yaml"
 
 # planner_server:
 #   ros__parameters:
